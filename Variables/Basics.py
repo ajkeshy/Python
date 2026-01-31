@@ -10,4 +10,4 @@ print("My goal is to become a " + goal + " in " + str(months) + " months!")
 #Creating new variables
 city = "Gbagada"
 hours_per_day = 2
-print("I am learning in ") + city + "for " + str(hours_per_day) + "hours a day"
+print("I am learning in " + city + " for " + str(hours_per_day) + "hours a day")
