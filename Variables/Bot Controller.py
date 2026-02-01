@@ -1,10 +1,9 @@
 #A script that simulates a simple robot
 
 #Ask for user input
-command = input("Enter a command for the robot (forward, backward, left, right, start, stop): ")
-
+command = input("Enter a command for the robot (forward, backward, left, right, start, stop): ").lower()
 #Process the commands
-if command == "start":
+if command == "Start":
     print("Robotic arm is moving...")
 elif command == "forward":
     print("Robot moving forward.")
