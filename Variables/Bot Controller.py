@@ -1,9 +1,14 @@
 #A script that simulates an always-on robot
-print("🤖 Robot System Online. ")
+print("🤖 Robot System V2.0 Online. ")
 print("Type 'quit' to exit the program.")
+#Creating a list of valid commands
+valid_commands = ["start", "forward", "backward", "left", "right", "stop", "wait", "jump", "quit"]
+#Check if the command is valid and respond accordingly
 
 while True:
     command = input("\nCommand > ").lower()
+    if command not in valid_commands:
+        print("⚠️ Error: Unknown command. Please try again.")
     if command == "quit":
         print("Shutting down robot system. Goodbye!")
         break
@@ -21,6 +26,6 @@ while True:
         print("Robotic arm has halted.")
     elif command == "wait":
         print("Robot is in standby mode.")
-    else:
-        print("Error: Unknown command.")
+    elif command == "jump":
+        print("Robot is jumping!")
 # The robot will respond to commands until 'quit' is entered
