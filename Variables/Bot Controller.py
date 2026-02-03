@@ -9,6 +9,7 @@ while True:
     command = input("\nCommand > ").lower()
     if command not in valid_commands:
         print("⚠️ Error: Unknown command. Please try again.")
+        continue #Prompt for the next command
     if command == "quit":
         print("Shutting down robot system. Goodbye!")
         break
