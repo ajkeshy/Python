@@ -11,6 +11,9 @@ commands = {
     "stop": "Robotic arm has halted.",
     "wait": "Robot is in standby mode.",
     "jump": "Robot is jumping!",
+    "dance": "Robot is dancing! 💃",
+    "sing": "Robot is singing! 🎤",
+    "charge"
 } 
 
 while True:
