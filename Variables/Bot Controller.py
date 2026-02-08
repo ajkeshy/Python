@@ -26,7 +26,8 @@ while True:
 
     if command in commands:
         print(commands[command]) #Print the response associated with the command
-    else:        print("Unknown command. Please try again.") #Handle unrecognized commands
+    else:        
+        print("Unknown command. Please try again.") #Handle unrecognized commands
 
 # The robot will respond to commands until 'quit' is entered
 #The while lop has now become shorter and more efficient due to the use of a dictionary, which allows for easy addition of new commands in the future.
