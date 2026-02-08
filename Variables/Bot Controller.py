@@ -1,32 +1,29 @@
 #A script that simulates an always-on robot
-print("🤖 Robot System V2.0 Online. ")
+print("🤖 Robot System V3.0 Online. ")
 print("Type 'quit' to exit the program.")
-#Creating a list of valid commands
-valid_commands = ["start", "forward", "backward", "left", "right", "stop", "wait", "jump", "quit"]
-#Check if the command is valid and respond accordingly
+#We are now using the concept of a dictionary to map commands to their respective values
+commands = { 
+    "start": "Robotic arm is moving...",
+    "forward": "Robot is moving forward..",
+    "backward": "Robot is moving backward.",
+    "left": "Robot is turning left.",
+    "right": "Robot is turning right.",
+    "stop": "Robotic arm has halted.",
+    "wait": "Robot is in standby mode.",
+    "jump": "Robot is jumping!",
+} 
 
 while True:
     command = input("\nCommand > ").lower()
-    if command not in valid_commands:
-        print("⚠️ Error: Unknown command. Please try again.")
-        continue #Prompt for the next command
+
+#Handling the qut command first to allow for a clean exit before processing other commands
     if command == "quit":
-        print("Shutting down robot system. Goodbye!")
-        break
-    elif command == "start":
-        print("Robotic arm is moving...")
-    elif command == "forward":
-        print("Robot moving forward.")
-    elif command == "backward":
-        print("Robot moving backward.")
-    elif command == "left":
-        print("Robot turning left.")
-    elif command == "right":
-        print("Robot turning right.")
-    elif command == "stop":
-        print("Robotic arm has halted.")
-    elif command == "wait":
-        print("Robot is in standby mode.")
-    elif command == "jump":
-        print("Robot is jumping!")
+        print("Shutting down the robot system. Goodbye!")
+        break #Exit the loop and end the program
+
+    if command in commands:
+        print(commands[command]) #Print the response associated with the command
+    else:        print("Unknown command. Please try again.") #Handle unrecognized commands
+
 # The robot will respond to commands until 'quit' is entered
+#The while lop has now become shorter and more efficient due to the use of a dictionary, which allows for easy addition of new commands in the future.
