@@ -29,5 +29,9 @@ while True:
     else:        
         print("Unknown command. Please try again.") #Handle unrecognized commands
 
+    #Adding logs to ensure logs are kept as best practice
+    with open("robot_log.txt", "a") as log_file:
+        log_file.write(command + "\n")
+
 # The robot will respond to commands until 'quit' is entered
 #The while lop has now become shorter and more efficient due to the use of a dictionary, which allows for easy addition of new commands in the future.
