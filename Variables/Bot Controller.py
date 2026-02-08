@@ -13,7 +13,7 @@ commands = {
     "jump": "Robot is jumping!",
     "dance": "Robot is dancing! 💃",
     "sing": "Robot is singing! 🎤",
-    "charge"
+    "charge": "Robot is charging its batteries.",
 } 
 
 while True:
