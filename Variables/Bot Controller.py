@@ -19,7 +19,7 @@ commands = {
 while True:
     command = input("\nCommand > ").lower()
 
-#Handling the qut command first to allow for a clean exit before processing other commands
+#Handling the quit command first to allow for a clean exit before processing other commands
     if command == "quit":
         print("Shutting down the robot system. Goodbye!")
         break #Exit the loop and end the program
